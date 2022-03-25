@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navBar {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    padding: 0.5rem;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
+    opacity: .6;
+}
+
+#navBar a {
+    padding: 0.8rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: var(--text), serif;
+    color: var(--blue-white);
+    opacity: 1;
+}
+
+#navBar a:hover {
+    color: var(--white);
+    background-color: var(--black);
+}

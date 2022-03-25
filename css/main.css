@@ -1,0 +1,192 @@
+:root {
+    --dark-blue: #224f72;
+    --mid-blue: #328bc4;
+    --light-blue: #5cbcd4;
+    --white: #ffffff;
+    --blue-white: #e3f7ff;
+    --black: #000000;
+}
+
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background-image: url('../img/index2.jpg');
+    min-height: 400px;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+}
+
+#navBar {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    padding: 0.5rem;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
+    opacity: .6;
+}
+
+
+#navBar a {
+    padding: 0.8rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
+    color: var(--blue-white);
+    opacity: 1;
+}
+
+#navBar a:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+#name1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    background-image: linear-gradient(to right, var(--dark-blue), var(--light-blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#name2 {
+    position: absolute;
+    top: 29%;
+    left: 4%;
+    font-family: 'Clicker Script', sans-serif;
+    font-size: 3rem;
+    background-image: linear-gradient(to right, var(--dark-blue), var(--light-blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+#bannerContainer {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, var(--blue-white), var(--white));
+
+}
+#tagline {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-image: linear-gradient(to right, var(--dark-blue), var(--light-blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    align-self: center;
+    color: var(--dark-blue);
+    padding: 1rem 2rem 1rem 1rem;
+    font-size: 1rem;
+}
+
+#cta1 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 40%;
+    align-self: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-image: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
+    color: var(--blue-white);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--dark-blue);
+    box-shadow: 3px 3px 6px #000000,
+                -3px -3px 6px #000000;
+    
+}
+
+#cta1:hover {
+    color: var(--light-blue);
+}
+
+#testimonials {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 60%;
+    align-self: center;
+    background-image: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+
+/* Float four columns side by side */
+.numbersColumn {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+    margin-top: 1rem;
+  }
+  
+  .numbersRow {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .numbersRow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .numbersColumn {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+.numbersCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
+    color: white;
+  }
+  
+.fa {
+    font-size:30px;
+    color: var(--blue-white);
+}
+
+.numbersH3, .numbersP {
+    color: var(--blue-white);
+    font-size: 0.75rem;
+}
+

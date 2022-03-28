@@ -1,0 +1,25 @@
+.reviewText, .reviewName {
+    align-self: center;
+    background-image: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+#testimonials {
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    width: 20%;
+    align-self: center;
+    background-image: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+  }

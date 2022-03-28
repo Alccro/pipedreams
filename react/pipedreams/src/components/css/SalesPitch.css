@@ -1,0 +1,45 @@
+#salesContainer {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, var(--blue-white), var(--white));
+}
+
+.pitchBorder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 1px solid black; */
+    margin: 2rem;
+
+}
+
+img {
+    padding: 2rem;
+    height: auto;
+    width: 100%; 
+}
+
+.pitchText {
+    padding: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+  #tagline {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-image: linear-gradient(to right, var(--dark-blue), var(--light-blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  p {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    align-self: center;
+    color: var(--dark-blue);
+    padding: 1rem 2rem 2rem 2rem;
+    font-size: 1rem;
+  }

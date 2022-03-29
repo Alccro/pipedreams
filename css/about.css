@@ -71,27 +71,12 @@ body {
     -webkit-background-clip: text;
     color: transparent;
 }    
-
-/* main content of home page */
-#salesContainer {
-    display: flex;
-    flex-direction: column;
-}
-.pitchBorder {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 2rem;
-    background-image: linear-gradient(to right, var(--blue-white), var(--white));
-}
-#pitchBorder2 {
-    background-image: linear-gradient(to left, var(--blue-white), var(--white));
-}
-@media screen and (max-width: 400px) {
-    .pitchBorder {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0.5rem;
-    }
+/* main content */
+h2 {
+    padding-left: 2rem;
+    font-family: var(--header);
+    font-size: 3rem;
+    color: var(--dark-blue);
 }
 img {
     padding: 1rem;
@@ -100,28 +85,13 @@ img {
     margin-top: auto;
     margin-bottom: auto; 
 }
-.pitchText {
-    padding: 1rem;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.headline {
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-    padding: 0.5rem;
-    background-image: linear-gradient(to right, var(--dark-blue), var(--light-blue));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
 p {
     font-family: 'Poppins', sans-serif;
     text-align: justify;
     align-self: center;
     color: var(--dark-blue);
     padding: 1rem 2rem 2rem 2rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* testimonials */
@@ -184,4 +154,3 @@ h3 {
     text-align: center;
     font-family: var(--header);
 }
-

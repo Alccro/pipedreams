@@ -162,3 +162,71 @@ h2 a:hover {
   color: rgb(255, 255, 255);
   transform: scale(1.2);
 }
+/* testimonials */
+#testimonialsBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  background-color: white;
+}
+#logo {
+  height:max-content;
+  width:auto;
+  justify-self: center;
+  opacity: 0.7;
+}
+#testimonialsText {
+  justify-self: center;
+  color: var(--dark-blue);
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+#testimonials {
+  padding-bottom: 1rem;
+}
+#cta1 {
+  width: auto;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-self: center;
+  font-family: var(--text), serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  background-image: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
+  color: var(--blue-white);
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  border: 1px solid var(--dark-blue);
+  box-shadow: 2px 2px 3px #000000;
+}
+#cta1:hover {
+  color: var(--light-blue);
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: var(--text);
+}
+iframe {
+  padding: 0.5rem;
+}
+h3 {
+  text-align: center;
+  font-family: var(--header);
+}
+p {
+  font-family: var(--text), sans-serif;
+  text-align: justify;
+  align-self: center;
+  color: var(--dark-blue);
+  padding: 1rem 2rem 2rem 2rem;
+  font-size: 1rem;
+}

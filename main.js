@@ -1,51 +1,26 @@
-// let slideIndex = 1;
-// showSlides(slideIndex);
-
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-//   let dots = document.getElementsByClassName("demo");
-//   let captionText = document.getElementById("caption");
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
-//   captionText.innerHTML = dots[slideIndex-1].alt;
-// }
 
 // Testimonials 
 const testimonials = [
     {
     id: 1,
-    name: 'Mr Smith',
-    text: 'Jamie and the team did a fantastic job. Highly recommended'
-    },
-    {
+    name: 'Mr A Douglas',
+    text: 'Jamie and the team did a fantastic job. Highly recommended.'
+},
+{
     id: 2,
-    name: 'Mrs Jones',
-    text: "I can't get enough of my new bathroom. We even eat in there now!"
-    },
-    {
+    name: 'Ms F Cartwright',
+    text: "We felt comfortable every step of the way and now we have a bathroom we are really happy with. Pipe Dreams did a great job."
+},
+{
     id: 3,
-    name: 'Dr Who',
-    text: "The old bathroom in the Tardis felt small and dingy. The Pipedreams crew have totally transformed it. Time flies when I'm in my new bathroom"
-    }
+    name: 'Ms C Morley',
+    text: "Jan in the showroom guided us through all our choices, making sure we were happy with every detail."
+},
+{
+    id: 4,
+    name: 'Mr T Burnett',
+    text: "Downstairs bathroom refit. On time, on budget. Polite crew who worked hard and produced quality workmanship. We're already planning our new main bathroom with Pipe Dreams."
+}
 ]
 const customerNumber = testimonials.map(function (customer) {
     return [customer.id];
@@ -63,14 +38,14 @@ let i = 0
 function rotate() {
     if(++i > number - 1) i = 0;
     document.getElementById('testimonials').innerHTML = `"${customerText[i]}"`;
-    document.getElementById('customer').innerHTML = `***** "${customerName[i]}" *****`;
-    setTimeout('rotate()', 3000);
+    document.getElementById('customer').innerHTML = `"${customerName[i]}"`;
+    setTimeout('rotate()', 6000);
 }
 
 window.onload = rotate()
 
 // random images
- const images = [
+const images = [
     '../../img/image1.jpg',
     '../../img/image2.jpg',
     '../../img/image3.jpg',
@@ -97,14 +72,16 @@ window.onload = rotate()
     '../../img/image24.jpg'
 ]
 
-const randomImage = () => {
-    return images[Math.floor(Math.random() * images.length)];
-}
+// const randomImage = () => {
+//     return images[Math.floor(Math.random() * images.length)];
+// }
 
-const urlImage = "url('" + randomImage() + "')";
-const sourceImage = randomImage();
+// const urlImage = "url('" + randomImage() + "')";
+// const sourceImage = randomImage();
 
 // document.getElementById('header').style.backgroundImage = urlImage;
-document.getElementById('image1').src = randomImage();
-document.getElementById('image2').src = randomImage();
-document.getElementById('image3').src = randomImage();
+// document.getElementById('image1').src = randomImage();
+// document.getElementById('image2').src = randomImage();
+// document.getElementById('image3').src = randomImage();
+
+

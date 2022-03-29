@@ -1,5 +1,4 @@
 /* global values */
-
 :root {
     --dark-blue: #224f72;
     --mid-blue: #328bc4;
@@ -11,67 +10,59 @@
     --text: 'Roboto Slab';
     --script: 'Clicker Script';
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* nav bar and banner */
-#header {
-    background-image: url('../img/image19.jpg');
-    width: 100%;
-    min-height: 75vh;
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
-    position: relative;
+body {
+    background-image: linear-gradient(to right, var(--blue-white), var(--white));
 }
 
+/* nav bar and banner */
 #navBar {
-    position: absolute;
-    top: 10px;
-    left: 0px;
+    position: relative;
     width: 100%;
-    padding: 0.5rem;
     overflow: hidden;
     display: inline-block;
     text-align: center;
     background-image: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
-    opacity: .6;
+    opacity: .8;
+    padding: 0.8rem;
 }
-
-
 #navBar a {
     padding: 0.8rem;
     text-decoration: none;
     font-size: 1.2rem;
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--text), serif;
     color: var(--blue-white);
     opacity: 1;
 }
-
 #navBar a:hover {
     color: var(--white);
     background-color: var(--black);
 }
-
+#banner {
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
 #name1 {
     font-family: var(--header), sans-serif;
     font-size: 4rem;
     position: absolute;
     top: 10%;
-    right: 4%;
+    right: 4.5%;
     background-image: linear-gradient(to right, var(--dark-blue), var(--light-blue));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
-
 #name2 {
     position: absolute;
-    top: 19%;
+    top: 18%;
     right: 4%;
     font-family: var(--script), sans-serif;
     font-size: 4rem;
@@ -81,76 +72,39 @@
     color: transparent;
 }    
 
-#cta1 {
-    position: absolute;
-    top: 29%;
-    right: 3%;
-    width: auto;
-    align-self: center;
-    font-family: var(--text), serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    background-image: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
-    color: var(--blue-white);
-    border-radius: 0.2rem;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid var(--dark-blue);
-    box-shadow: 2px 2px 3px #000000;
-}
-
-#cta1:hover {
-    color: var(--light-blue);
-}
-
-#testimonialsBox {
-    position: absolute;
-    top: 40%;
-    left: 2%;
-    width: 20%;
-    align-self: center;
-    background-image: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    text-align: center;
-    font-style: italic;
-    font-size: 1.2rem;
-}
-
 /* main content of home page */
 #salesContainer {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to right, var(--blue-white), var(--white));
 }
-
 .pitchBorder {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2rem;
+    background-image: linear-gradient(to right, var(--blue-white), var(--white));
 }
-
+#pitchBorder2 {
+    background-image: linear-gradient(to left, var(--blue-white), var(--white));
+}
 @media screen and (max-width: 400px) {
     .pitchBorder {
         display: grid;
         grid-template-columns: 1fr;
-        margin: 2rem;
+        margin: 0.5rem;
     }
 }
-
 img {
-    padding: 2rem;
+    padding: 1rem;
     height: auto;
-    width: 100%; 
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto; 
 }
-
 .pitchText {
-    padding: 2rem;
+    padding: 1rem;
     margin-top: auto;
     margin-bottom: auto;
 }
-
 .headline {
     width: 100%;
     text-align: center;
@@ -161,14 +115,58 @@ img {
     -webkit-background-clip: text;
     color: transparent;
 }
-  
 p {
     font-family: 'Poppins', sans-serif;
     text-align: justify;
     align-self: center;
     color: var(--dark-blue);
     padding: 1rem 2rem 2rem 2rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
+}
+
+/* testimonials */
+#testimonialsBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    background-color: white;
+}
+#logo {
+    height:max-content;
+    width:auto;
+    justify-self: center;
+    opacity: 0.7;
+}
+#testimonialsText {
+    justify-self: center;
+    color: var(--dark-blue);
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+#testimonials {
+    padding-bottom: 1rem;
+}
+#cta1 {
+    width: auto;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-self: center;
+    font-family: var(--text), serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background-image: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
+    color: var(--blue-white);
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    border: 1px solid var(--dark-blue);
+    box-shadow: 2px 2px 3px #000000;
+}
+#cta1:hover {
+    color: var(--light-blue);
 }
 
 /* statistics boxes */
@@ -178,15 +176,14 @@ p {
     padding: 0 5px;
     margin-top: 1rem;
 }
-  
-.numbersRow {margin: 0 -5px;}
-  
+.numbersRow {
+    margin: 0 -5px;
+}
 .numbersRow:after {
     content: "";
     display: table;
     clear: both;
 }
-  
 @media screen and (max-width: 400px) {
     .numbersColumn {
       width: 100%;
@@ -194,7 +191,6 @@ p {
       margin-bottom: 10px;
     }
 }
-  
 .numbersCard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
@@ -202,13 +198,11 @@ p {
     background-image: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
     color: white;
 }
-  
 .fa {
     font-size:30px;
     color: var(--blue-white);
     text-align: center;
 }
-
 .numbersH3, .numbersP {
     color: var(--blue-white);
     font-size: 0.75rem;
